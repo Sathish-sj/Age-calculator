@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalc-Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="nav-title">SmartCalc</h1>
+        <ul>
+            
+          <li class="n-link"><a class="navlink" href="index.html" id="calc-link">Calculator</a></li>
+          <li class="n-link"><a class="navlink" href="bmi.html" id="bmi-link">Know your BMI</a></li>
+          <li class="n-link"><a class="navlink" href="age_calc.html" id="age-link">Age Calculator</a></li>
+          <li><a class="navlink" href="about.html" id="about-link">About</a></li>
+        </ul>
+      </nav>
+    
+    <div class="container age-container">
+        <div class="agecalc-div">
+            <h1 class="age_heading">Age Calculator</h1>
+            <p class="age-border">--------------------------------------------------------------------------</p>
+            <br>
+            <label for="">Name</label>
+            <input class="input_age" type="text" name="" id="name">
+            <br><br>
+
+            <label for="">Date of Birth</label>
+            <input class="input_age" type="date" id="dob">
+            <br><br><br>
+
+            <button class="age-calc-btn" onclick="calc()">Calculate</button>
+        </div>
+
+        <div id="age-result">
+            <h2 class="age-text"></h2>
+        </div>
+    </div>
+
+    <div  id="Mymodal" class="modal">
+        <div id="popup-animation" class="modal-content">
+            <span title="close" class="close">&times;</span>
+            <h2 class="Popup-text"></h2>
+        </div>
+    </div>
+
+  <script src="age_calc.js"></script>
+</body>
+</html>
